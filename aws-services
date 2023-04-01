@@ -1,0 +1,14 @@
+aws = []
+aws += ["S3 Bucket"]
+aws += ["Lambda"]
+aws += ["DynamoDB"]
+aws += ["Ec2"]
+aws += ["RDS"]
+aws += ["RDS Proxy"]
+print(aws)
+print(len(aws))
+aws.remove("Lambda")
+aws.remove("Ec2")
+aws.append("Fargate")
+print(aws)
+print(len(aws))
